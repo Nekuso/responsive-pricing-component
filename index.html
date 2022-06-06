@@ -12,17 +12,28 @@
     <section class="card">
         <div class="slider__container">
             <h3>100K PAGEVIEWS</h3>
-            <input class="range" type="range">
+            <input class="range" type="range" name="" value="0.00" min="0"  step="2" max="32" onChange="rangeSlide"(value)>
             <div class="price__container">
-                $<h2 class="price">1</h2>
+                $<h2 class="price"></h2>
                 <p>/ month</p>
             </div>
         </div>
+
+
         <div class="billing__container">
             <p>Monthly Billing</p>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+
             <p>Yearly Billing</p>
+            <p class="-discount">-25%</p>
             <p class="discount">25% discount</p>
         </div>
+
+
         <div class="start__trial">
             <ul class="trial__benefits">
                 <li><img src="/assets/img/icon-check.svg" alt="">Unlimited websites</li>
@@ -31,8 +42,8 @@
             </ul>
             <a href="">Start my trial</a>
         </div>
-
     </section>
     
+    <script src="/assets/js/main.js" type="text/javascript"></script>
 </body>
 </html>

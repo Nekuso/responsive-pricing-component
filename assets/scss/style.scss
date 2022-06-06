@@ -2,15 +2,15 @@
 
 $Soft: hsl(174, 77%, 80%);
 $Strong: hsl(174, 86%, 45%);
-$Light: hsl(14, 92%, 95%);
-$Light: hsl(15, 100%, 70%);
+$Ligh-light-orange: hsl(14, 92%, 95%);
+$Light-orange: hsl(15, 100%, 70%);
 $Pale: hsl(226, 100%, 87%);
 
 
 $White: hsl(0, 0%, 100%);
 $Very: hsl(230, 100%, 99%);
 $Light:hsl(224, 65%, 95%);
-$Light: hsl(223, 50%, 87%);
+$Light-light: hsl(223, 50%, 87%);
 $Grayish:hsl(225, 20%, 60%);
 $Dark:hsl(227, 35%, 25%);
 
@@ -29,7 +29,8 @@ ul, li{
     list-style: none;
 }
 
-a {
+a, h2, h1, h3 {
+    margin: 0;
     text-decoration: none;
 }
 
@@ -39,31 +40,154 @@ hr {
     width: 100%;
 }
 
+
 .card {
     text-align: center;
     max-width: 70vh;
     color: $Grayish;
-    margin: 0 auto;
+    margin: 2rem auto;
     background: $White;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     border-radius: 1rem;
+
+
+    h3 {
+        padding: 2rem;
+        font-size: 1rem;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: .7rem;
+        margin: .5rem;
+    }
     
     .slider__container {
-        padding: 1.5rem;
+        padding: 0 1.5rem;
         display: grid;
         
         .price__container {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 0;
+            padding: 1rem;
+            font-size: 2rem;
+            font-weight: 800;
+            color:hsl(227, 35%, 25%);
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            p{
+                color: $Grayish;
+                font-weight: 500;
+                font-size:  1rem;
+            }
         }
+
+        .range {
+            appearance: none;
+            height: 7px;
+            width: 100%;
+            border-radius: 1rem;
+            background: $Light;
+            opacity: 0.7;
+            outline: none;
+            
+        }
+
+        .range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 35px;
+            height: 35px;
+            background: $Strong;
+            border-radius: 2rem;
+            box-shadow: 0px 20px 36px 0px $Strong;
+            background-image: url(/assets/img/icon-slider.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            cursor: pointer;
+            
+        }
+
+        .range::-moz-range-thumb {
+            height: 25px;
+            width: 25px;
+            background: $Soft;
+        }
+
     }
     
     .billing__container{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         text-align: center;
+        margin: 2rem 0;
+        margin-top: .5rem;
+        
+        p {
+        font-weight: 600;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+            margin: 0 5px;
+
+            .slider{
+                margin: 0;
+                position:absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $Pale;
+                transition: .4s ease-in-out;
+                border-radius: 34px;
+            }
+
+            input {display: none;}
+            
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                left: 3px;
+                bottom: 2.71px;
+                background: white;
+                transition:.4s ease-in-out;
+                border-radius: 50px;
+            }
+
+            input:checked + .slider {
+                background: $Strong;
+            }
+
+            input:checked + .slider:before {
+                transform: translateX(24px)
+            }
+        }
+
+        .-discount {
+            font-size: .6rem;
+            padding: .2rem .5rem;
+            border-radius: 1rem;
+            color: $Light-orange;
+            font-weight: 900;
+            background: $Ligh-light-orange;
+        }
+
+        .discount{
+            display: none;
+        }
     }
 
     .start__trial {
