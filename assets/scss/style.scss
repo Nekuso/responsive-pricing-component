@@ -48,7 +48,6 @@ hr {
     width: 100%;
 }
 
-
 .intro__text {
     background:url(/assets/img/pattern-circles.svg);
     background-repeat: no-repeat;
@@ -62,12 +61,11 @@ hr {
     h3 {
         font-weight: 800;
         color: $Dark;
-        
     }
 
     p{
         color: $Dark;
-        font-weight: 500;
+        font-weight: 600;
         font-size: .8rem;
         padding: .4rem 5rem;
     }
@@ -89,7 +87,7 @@ hr {
     }
 
     p{
-        font-weight: 400;
+        font-weight: 600;
         font-size: .7rem;
         margin: .5rem;
     }
@@ -109,12 +107,12 @@ hr {
             
             h2 {
                 font-size: 2rem;
-                font-weight: 900;
+                font-weight: 800;
             }
             
             p{
                 color: $Grayish;
-                font-weight: 500;
+                font-weight: 600;
                 font-size:  1rem;
             }
         }
@@ -151,7 +149,6 @@ hr {
             width: 25px;
             background: $Soft;
         }
-
     }
     
     .billing__container{
@@ -219,7 +216,7 @@ hr {
             padding: .2rem .5rem;
             border-radius: 1rem;
             color: $Light-orange;
-            font-weight: 900;
+            font-weight: 800;
             background: $Ligh-light-orange;
         }
 
@@ -230,7 +227,7 @@ hr {
             padding: .2rem .5rem;
             border-radius: 1rem;
             color: $Light-orange;
-            font-weight: 900;
+            font-weight: 800;
             background: $Ligh-light-orange;
         }
     }
@@ -257,9 +254,14 @@ hr {
                 color: $Light-light;
                 background: $Dark;
                 border-radius: 2rem;
-                padding: .7rem 3.2rem;
+                padding: .6rem 3.2rem;
             }
         }
+
+        .start__trial__button:hover a{
+            color: $White;
+        }
+
     }
 }
 
@@ -275,6 +277,7 @@ hr {
         margin-top: 2rem;
         padding: 2rem;
         padding-bottom: 2rem;
+        background-position: center 20%;
         background-size: 6rem;
         h3 {
             font-size: 1.2rem;
@@ -289,7 +292,6 @@ hr {
         max-width: 460px;
         margin: .5rem auto;
 
-        
         .slider__container{
             align-items: center;
             justify-content: center;
@@ -309,17 +311,16 @@ hr {
                 grid-area: price_container;
                 padding: 0 0 0 0;
                 font-size: 1.5rem;
-
             }
 
             h2 {
                 font-size: 1.5rem;
-                font-weight: 900;
+                font-weight: 800;
             }
             
             p{
                 color: $Grayish;
-                font-weight: 500;
+                font-weight: 600;
                 font-size:  .5rem;
             }
 
@@ -345,7 +346,7 @@ hr {
                 padding: .2rem .5rem;
                 border-radius: 1rem;
                 color: $Light-orange;
-                font-weight: 900;
+                font-weight: 800;
                 background: $Ligh-light-orange;
             }
             
@@ -355,7 +356,7 @@ hr {
                 padding: .2rem .5rem;
                 border-radius: 1rem;
                 color: $Light-orange;
-                font-weight: 900;
+                font-weight: 800;
                 background: $Ligh-light-orange;
             }
         }
@@ -374,8 +375,5 @@ hr {
                 }
             }
         }
-
     }
-
-
 }
