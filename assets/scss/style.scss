@@ -70,7 +70,7 @@ hr {
             justify-content: center;
             align-items: center;
             margin: 0;
-            padding: 1rem;
+            padding: 2rem 1rem 1rem 1rem;
             font-size: 2rem;
             font-weight: 800;
             color:hsl(227, 35%, 25%);
@@ -87,14 +87,15 @@ hr {
         }
 
         .range {
+            -webkit-appearance: none;
             appearance: none;
             height: 7px;
             width: 100%;
             border-radius: 1rem;
-            background: $Light;
+            background: linear-gradient(90deg, $Light);
             opacity: 0.7;
             outline: none;
-            
+             
         }
 
         .range::-webkit-slider-thumb {
