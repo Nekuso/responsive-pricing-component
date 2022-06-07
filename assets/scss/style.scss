@@ -77,6 +77,7 @@ hr {
             
             h2 {
                 font-size: 2rem;
+                font-weight: 900;
             }
             
             p{
@@ -92,7 +93,7 @@ hr {
             height: 7px;
             width: 100%;
             border-radius: 1rem;
-            background: linear-gradient(90deg, $Light);
+            background: linear-gradient(90deg, hsl(174, 77%, 80%,)),hsl(223, 50%, 87%);
             opacity: 0.7;
             outline: none;
              
@@ -187,13 +188,39 @@ hr {
 
         .discount{
             display: none;
+            font-size: .6rem;
+            padding: .2rem .5rem;
+            border-radius: 1rem;
+            color: $Light-orange;
+            font-weight: 900;
+            background: $Ligh-light-orange;
         }
     }
 
     .start__trial {
-        border-top: 1px solid $Grayish;
+        border-top: 1px solid $Light;
         padding: 1.5rem;
         margin: 0;
+
+        ul li{
+            font-size: .8rem;
+            margin-bottom: .8rem;
+
+            img {
+                margin-right: 15px;
+            }
+        }
+
+        .start__trial__button {
+            margin: 2.2rem 0;
+            a {
+                font-size: .7rem;
+                color: $White;
+                background: $Dark;
+                border-radius: 2rem;
+                padding: .8rem 3.2rem;
+            }
+        }
     }
     
 }
