@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+
+// VARIABLES
 $Soft: hsl(174, 77%, 80%);
 $Strong: hsl(174, 88%, 44%);
 $Ligh-light-orange: hsl(14, 92%, 95%);
@@ -15,7 +17,7 @@ $Grayish:hsl(225, 20%, 60%);
 $Dark:hsl(227, 35%, 25%);
 
 
-
+// RESET
 body {
     margin: 0;
     padding: 0;
