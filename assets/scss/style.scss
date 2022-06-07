@@ -23,7 +23,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manrope';
-    background: url(assets/img/bg-pattern.svg);
+    background: url(../img/bg-pattern.svg);
     background-repeat: no-repeat;
     background-size: 100% 42%;
 }
@@ -51,7 +51,7 @@ hr {
 }
 
 .intro__text {
-    background:url(assets/img/pattern-circles.svg);
+    background:url(../assets/img/pattern-circles.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 8.5rem;
