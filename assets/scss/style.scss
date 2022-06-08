@@ -23,7 +23,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manrope';
-    background: url(../assets/img/bg-pattern.svg);
+    background-image: url(assets/img/bg-pattern.svg);
     background-repeat: no-repeat;
     background-size: 100% 42%;
 }
@@ -51,9 +51,9 @@ hr {
 }
 
 .intro__text {
-    background:url(../assets/img/pattern-circles.svg);
-    background-repeat: no-repeat;
+    background-image: url(/assets/img/pattern-circles.svg);
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: 8.5rem;
     text-align: center;
     padding: 2.5rem;
@@ -139,7 +139,7 @@ hr {
             background: $Strong;
             border-radius: 2rem;
             box-shadow: 0px 20px 36px 0px $Strong;
-            background-image: url(/assets/img/icon-slider.svg);
+            background-image: url(assets/img/icon-slider.svg);
             background-repeat: no-repeat;
             background-position: center center;
             cursor: pointer;   
