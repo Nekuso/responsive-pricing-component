@@ -1,10 +1,12 @@
 const slider = document.querySelector("input");
 const value = document.querySelector(".price");
+const viewcount = document.querySelector(".viewcount")
 
 value.textContent = slider.value + ".00";
 
 slider.oninput = function() {
     value.textContent = this.value + ".00";
+    viewcount.textContent = this.value * 6.25;
 }
 
 slider.addEventListener('input', function(){
