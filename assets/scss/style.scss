@@ -307,13 +307,19 @@ hr {
             'pv price_container'
             'ranged ranged'
             ;
-    
-            h3 {
+
+            
+            .pageview {
                 display: flex;
-                flex: 1 1 100%;
+                justify-content: center;
                 grid-area: pv;
+                
+                .thousand{
+                    margin-right: .2rem;
+                }
             }
-    
+            
+            
             .price__container{
                 grid-area: price_container;
                 padding: 0 0 0 0;
